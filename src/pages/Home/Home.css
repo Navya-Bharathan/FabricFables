@@ -1,0 +1,13 @@
+.home-page-container{
+    margin: 0 1rem;
+}
+.home-page-banner-image{
+    background-image:url(../../assets/homeBannerImage.jpg);
+    width:auto;
+    height: 350px;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.home-carasoul-container{
+    margin:1rem 0 0 0 ;
+}
