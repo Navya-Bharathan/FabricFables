@@ -1,0 +1,32 @@
+.shop-container{
+    display:flex;
+    margin: 0 1rem 1rem 1rem;
+  
+}
+.filter-container{
+    flex: 1;
+    background-color: beige;
+    padding:2rem;
+}
+.product-display-container{
+    flex:3;
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+.product-display-container button{
+    padding: 5px 10px;
+   background-color: var(--text-colour-primary);
+   color:white;
+    border:none ;
+    border-radius: 8px;
+   font-size: 20px;
+}
+.product-display{
+    flex:3;
+    padding:2rem;
+    display:grid;
+    grid-template-columns:repeat(3,250px) ;
+    grid-template-rows:2 ;
+    gap:50px;
+}

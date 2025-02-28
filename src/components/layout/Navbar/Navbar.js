@@ -5,6 +5,7 @@ import Logo from '../../../assets/Logo1.png'
 import { FaOpencart } from "react-icons/fa";
 import { PiGlobeThin } from "react-icons/pi";
 import { FaRegHeart } from "react-icons/fa";
+import { GoSearch } from "react-icons/go";
 import './Navbar.css'
 
 const Navbar = () => {
@@ -14,20 +15,19 @@ const Navbar = () => {
          <Link to="/"><img src={Logo} alt='Fabric Fables'/></Link>
         </div>
         <div className='navbar-page-links-div'>
-        <ul className='navbar-page-links'>
+          <ul className='navbar-page-links'>
+            <li><Link to="/shop">SHOP</Link></li>
             <li><Link to="/men">MEN</Link></li>
             <li><Link to="/women">WOMEN</Link></li>
             <li><Link to="/kids">KIDS</Link></li>
-            <li><Link to="/decore">HOME</Link></li>
-           
-        </ul>
+          </ul>
         </div>
         <div className='navbar-icon-links-div'>
             <ul className='navbar-icon-links'>
+                <li><GoSearch/></li>
                 <li><PiGlobeThin/></li>
                 <li><FaRegHeart /></li>
                 <li><FaOpencart /></li>
-
             </ul>
         </div>
     </nav>

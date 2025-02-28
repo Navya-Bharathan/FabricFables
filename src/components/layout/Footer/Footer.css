@@ -1,0 +1,27 @@
+.footer-container{
+   
+    background-color: var(--text-colour-primary);
+    display: flex;
+    color:white;
+    padding:0 5rem;
+}
+.footer-about-container{
+    flex:1;
+}
+.footer-about-container h1{
+    font-family: "Send Flowers", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.quick-links-container{
+    flex:1;
+    padding: 5px;
+}
+
+.quick-links-container ul{
+    list-style-type: none ;
+}
+.quick-links-container ul li::before {
+    content: "➜"; /* Change the arrow style here */
+    margin-right: 8px;
+}

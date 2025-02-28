@@ -1,9 +1,10 @@
 import React from 'react'
-import Carousel from '../../components/layout/Carousel/Carousel';
+import PopularCarousel from '../../components/layout/Carousel/PopularCarousel';
+import NewArrivalCarousel from '../../components/layout/Carousel/NewArrivalCarousel';
 import products from '../../data/products';
 import './Home.css';
 const Home = () => {
-  console.log(products.name)
+  
   return (
     <div className='home-page-container'>
 
@@ -13,8 +14,11 @@ const Home = () => {
 
       <div className='home-carasoul-container'> 
         <h1>Our Popular Products </h1>
-        
-        <Carousel products={products}/>
+            <PopularCarousel products={products}/>
+      </div>
+      <div className='home-carasoul-container'> 
+        <h1>New Arrival </h1>
+            <NewArrivalCarousel products={products}/>
       </div>
 
     </div>

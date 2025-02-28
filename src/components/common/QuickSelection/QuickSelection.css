@@ -1,0 +1,22 @@
+.quick-selection-container{
+    display:flex;
+    position: absolute;
+    bottom:175px;
+    left:35px;
+    
+}
+.quick-selection-container ul{
+    display:flex;
+    color:var(--text-colour-primary);
+    gap:1rem;
+    list-style: none;
+    justify-content: space-around ;
+    padding:2px;
+   
+}
+.quick-selection-container ul li{
+    background-color: #e0d4d2;
+    font-size:25px;
+    border-radius: 3rem;
+    padding: 0.75rem;
+}

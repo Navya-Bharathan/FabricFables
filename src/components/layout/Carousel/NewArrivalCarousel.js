@@ -8,10 +8,10 @@ import "swiper/css/pagination";
 
 import "./Carousel.css"
 
-const Carousel = ({products}) => {
+const NewArrivalCarousel = ({products}) => {
  
   return (
-    <Swiper
+    <Swiper className='carousel-swiper-container'
       modules={[Navigation, Pagination]}
       spaceBetween={80}
       slidesPerView={5}
@@ -34,7 +34,7 @@ const Carousel = ({products}) => {
       onSwiper={(swiper) => console.log(swiper)}
       
     >
-      {products.filter((product) => product.popular) 
+      {products.filter((product) => product.new) 
       .map((product) => (
         <SwiperSlide key={product.id}> {/* Ensure unique `key` prop */}
           <Cards product={product} /> {/* Pass the product data as prop */}
@@ -45,4 +45,4 @@ const Carousel = ({products}) => {
   )
 }
 
-export default Carousel
+export default NewArrivalCarousel
